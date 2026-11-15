@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cyvuymjxsx7fp"]
+
+[ext_resource type="Texture2D" uid="uid://r6u68spnrx3y" path="res://pixilart-drawing 7.png" id="1_jp4vk"]
+[ext_resource type="Script" uid="uid://bfne4fa58xtvm" path="res://fff/strzala.gd" id="1_t1s6i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6iq5h"]
+size = Vector2(18, 13)
+
+[node name="strzala" type="CharacterBody2D" unique_id=281779850 groups=["strzała"]]
+position = Vector2(1, 0)
+collision_layer = 5
+script = ExtResource("1_t1s6i")
+
+[node name="rename" type="Area2D" parent="." unique_id=1326692394 groups=["strzała"]]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="rename" unique_id=2093449025 groups=["strzała"]]
+position = Vector2(16, 0)
+shape = SubResource("RectangleShape2D_6iq5h")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1665402749 groups=["strzała"]]
+position = Vector2(-90.00001, -66)
+scale = Vector2(1.92, 1.35)
+texture = ExtResource("1_jp4vk")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=364529355]
+
+[connection signal="area_entered" from="rename" to="." method="_on_rename_area_entered"]

@@ -1,0 +1,385 @@
+[gd_scene format=3 uid="uid://0ej2o2vkm6bx"]
+
+[ext_resource type="Script" uid="uid://cfflicw3n3xkh" path="res://atsumupid.gd" id="1_7xv3t"]
+[ext_resource type="Texture2D" uid="uid://drvgeooxjy5ni" path="res://pixilart-drawing 16.png" id="1_prqnc"]
+[ext_resource type="Script" uid="uid://betmspekgyfvo" path="res://character_body_2d.gd" id="3_fmlud"]
+[ext_resource type="Texture2D" uid="uid://lk8h78wyytn" path="res://pixil-frame-0.png" id="3_j7kcg"]
+[ext_resource type="PackedScene" uid="uid://dcdwbi166ikuu" path="res://luk.tscn" id="4_4ujww"]
+[ext_resource type="Texture2D" uid="uid://whjhso6lhnwq" path="res://pixilart-drawing 8.png" id="4_8l7vy"]
+[ext_resource type="Script" uid="uid://dnms566meil8q" path="res://character_body_2d_2.gd" id="5_0urks"]
+[ext_resource type="Texture2D" uid="uid://bwiv5tcxfjxlr" path="res://pixilart-drawing 9.png" id="6_prqnc"]
+[ext_resource type="Texture2D" uid="uid://t07uoa27jp26" path="res://pixilart-drawing 10.png" id="9_4ujww"]
+[ext_resource type="Texture2D" uid="uid://b6venkbe24rli" path="res://pixilart-drawing 11.png" id="10_t06ff"]
+[ext_resource type="Texture2D" uid="uid://cmkjp1rlc8c53" path="res://pixilart-drawing 12.png" id="11_4yot2"]
+[ext_resource type="Texture2D" uid="uid://c0txmixbwbkkk" path="res://pixilart-drawing 13.png" id="12_lwa3h"]
+[ext_resource type="Texture2D" uid="uid://dth1g8ash1aaq" path="res://pixilart-drawing 14.png" id="13_15jce"]
+[ext_resource type="Texture2D" uid="uid://ct4lkqil1tfq2" path="res://pixilart-drawing 15.png" id="14_muen7"]
+[ext_resource type="Texture2D" uid="uid://byd446pqnigbp" path="res://pixil-frame-0 2.png" id="15_4yot2"]
+[ext_resource type="Texture2D" uid="uid://0renjoyi0uif" path="res://pixilart-drawing 18.png" id="16_15jce"]
+[ext_resource type="Script" uid="uid://i0jnljpdak5h" path="res://madzia.gd" id="17_ijnit"]
+[ext_resource type="Texture2D" uid="uid://d15idrb5ctl6s" path="res://pixil-frame-0 3.png" id="17_muen7"]
+[ext_resource type="Script" uid="uid://31x4ob6bk4w5" path="res://canvas_layer.gd" id="19_00odv"]
+[ext_resource type="Texture2D" uid="uid://c7ythky4jgbcd" path="res://pixil-frame-0 4.png" id="19_ijnit"]
+[ext_resource type="Texture2D" uid="uid://cawalj4o6dc76" path="res://pixilart-drawing 4.png" id="20_dqqx3"]
+[ext_resource type="Texture2D" uid="uid://b4ly8xu2ugwup" path="res://pixilart-drawing 21.png" id="21_00odv"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0urks"]
+normal = Vector2(-0.0070920205, 0.9999749)
+distance = -32.09848
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_co2oj"]
+distance = -494.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ltfql"]
+distance = -639.06775
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_nhfh1"]
+distance = -657.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_co2oj"]
+radius = 52.34501
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6iq5h"]
+size = Vector2(18.5, 16.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0urks"]
+size = Vector2(39, 74)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_co2oj"]
+size = Vector2(49, 92)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f7os4"]
+size = Vector2(16.625, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ltfql"]
+size = Vector2(44.5, 125)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nhfh1"]
+size = Vector2(16.5, 10.2421875)
+
+[node name="Node2D" type="Node2D" unique_id=73119380]
+position = Vector2(487, 7)
+
+[node name="tłó" type="Sprite2D" parent="." unique_id=759408631]
+position = Vector2(84.6923, 320.00003)
+rotation = 6.2831855
+scale = Vector2(5.806923, 5)
+texture = ExtResource("1_prqnc")
+
+[node name="ściany" type="StaticBody2D" parent="." unique_id=1464635217]
+position = Vector2(7, -3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ściany" unique_id=708796355]
+position = Vector2(-391, 25)
+shape = SubResource("WorldBoundaryShape2D_0urks")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="ściany" unique_id=1837013892]
+position = Vector2(0, 10)
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_co2oj")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="ściany" unique_id=1817271840]
+shape = SubResource("WorldBoundaryShape2D_ltfql")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="ściany" unique_id=1817757924]
+rotation = -1.5707964
+shape = SubResource("WorldBoundaryShape2D_nhfh1")
+
+[node name="atsumupid" type="CharacterBody2D" parent="." unique_id=1799193066 groups=["atsumpid"]]
+position = Vector2(167, 299)
+script = ExtResource("1_7xv3t")
+
+[node name="Spriteatsumu" type="Sprite2D" parent="atsumupid" unique_id=1405246630 groups=["atsumpid"]]
+position = Vector2(-14.999996, 27.000015)
+scale = Vector2(1.79, 1.78)
+texture = ExtResource("3_j7kcg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="atsumupid" unique_id=1056327348]
+position = Vector2(-43, 0)
+shape = SubResource("CircleShape2D_co2oj")
+
+[node name="luk" parent="atsumupid" unique_id=490334922 instance=ExtResource("4_4ujww")]
+position = Vector2(5, 3)
+scale = Vector2(1.5, 1.5)
+
+[node name="Aron" type="CharacterBody2D" parent="." unique_id=1318276868 groups=["enemies"]]
+position = Vector2(273, 127)
+script = ExtResource("3_fmlud")
+
+[node name="Sprite2D aron" type="Sprite2D" parent="Aron" unique_id=26240415 groups=["enemies"]]
+position = Vector2(269.5, -16.5)
+scale = Vector2(2.81, 2.23)
+texture = ExtResource("4_8l7vy")
+
+[node name="Area2D" type="Area2D" parent="Aron" unique_id=364810180 groups=["enemies", "jjjj"]]
+position = Vector2(245, -7)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Aron/Area2D" unique_id=783412975 groups=["enemies"]]
+position = Vector2(-5, -4)
+shape = SubResource("RectangleShape2D_6iq5h")
+debug_color = Color(0.95911974, 0, 0.5260599, 0.41960785)
+
+[node name="CollisionShape2D aron" type="CollisionShape2D" parent="Aron" unique_id=1076546223 groups=["enemies"]]
+position = Vector2(243, -18)
+shape = SubResource("RectangleShape2D_0urks")
+
+[node name="Timer" type="Timer" parent="Aron" unique_id=1157047155 groups=["enemies"]]
+
+[node name="Łucja" type="CharacterBody2D" parent="." unique_id=1576775105 groups=["enemies"]]
+position = Vector2(434, -7)
+script = ExtResource("5_0urks")
+
+[node name="Sprite2D Łucja" type="Sprite2D" parent="Łucja" unique_id=1061471531 groups=["enemies"]]
+position = Vector2(-112.75, 116.75)
+scale = Vector2(2.325, 2.235)
+texture = ExtResource("6_prqnc")
+
+[node name="CollisionShape2D łucja" type="CollisionShape2D" parent="Łucja" unique_id=2137121776 groups=["enemies"]]
+position = Vector2(-135.5, 114)
+shape = SubResource("RectangleShape2D_co2oj")
+
+[node name="Timer" type="Timer" parent="Łucja" unique_id=265985757 groups=["enemies"]]
+
+[node name="Area2D" type="Area2D" parent="Łucja" unique_id=1972646255 groups=["enemies", "jjjj"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Łucja/Area2D" unique_id=606770851 groups=["enemies"]]
+position = Vector2(-140.625, 121)
+shape = SubResource("RectangleShape2D_f7os4")
+debug_color = Color(0.9697797, 0, 0.46224964, 0.41960785)
+
+[node name="zosia" type="CharacterBody2D" parent="." unique_id=1045615824 groups=["enemies"]]
+position = Vector2(-213, 392)
+script = ExtResource("5_0urks")
+
+[node name="Sprite2D Łucja" type="Sprite2D" parent="zosia" unique_id=382821336 groups=["enemies"]]
+position = Vector2(-112.75, 116.75)
+scale = Vector2(2.325, 2.235)
+texture = ExtResource("9_4ujww")
+
+[node name="CollisionShape2D łucja" type="CollisionShape2D" parent="zosia" unique_id=1872731015 groups=["enemies"]]
+position = Vector2(-135.5, 114)
+shape = SubResource("RectangleShape2D_co2oj")
+
+[node name="Timer" type="Timer" parent="zosia" unique_id=1697968373 groups=["enemies"]]
+
+[node name="Area2D" type="Area2D" parent="zosia" unique_id=1152658765 groups=["enemies", "jjjj"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zosia/Area2D" unique_id=1710840041 groups=["enemies"]]
+position = Vector2(-133, 94)
+shape = SubResource("RectangleShape2D_f7os4")
+debug_color = Color(0.9697797, 0, 0.46224964, 0.41960785)
+
+[node name="matylda" type="CharacterBody2D" parent="." unique_id=1077907023 groups=["enemies"]]
+position = Vector2(136, 369)
+script = ExtResource("5_0urks")
+
+[node name="Sprite2D Łucja" type="Sprite2D" parent="matylda" unique_id=50952532 groups=["enemies"]]
+position = Vector2(-112, 114)
+scale = Vector2(2.325, 2.235)
+texture = ExtResource("10_t06ff")
+
+[node name="CollisionShape2D łucja" type="CollisionShape2D" parent="matylda" unique_id=1956456913 groups=["enemies"]]
+position = Vector2(-133, 112)
+shape = SubResource("RectangleShape2D_co2oj")
+
+[node name="Timer" type="Timer" parent="matylda" unique_id=2020244810 groups=["enemies"]]
+
+[node name="Area2D" type="Area2D" parent="matylda" unique_id=2143560307 groups=["enemies", "jjjj"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="matylda/Area2D" unique_id=987586931 groups=["enemies"]]
+position = Vector2(-133, 133)
+shape = SubResource("RectangleShape2D_f7os4")
+debug_color = Color(0.9697797, 0, 0.46224964, 0.41960785)
+
+[node name="tighnari" type="CharacterBody2D" parent="." unique_id=1870018772 groups=["enemies"]]
+position = Vector2(-7, 295)
+script = ExtResource("5_0urks")
+
+[node name="Sprite2D Łucja" type="Sprite2D" parent="tighnari" unique_id=603650029 groups=["enemies"]]
+position = Vector2(-112, 114)
+scale = Vector2(2.325, 2.235)
+texture = ExtResource("11_4yot2")
+
+[node name="CollisionShape2D łucja" type="CollisionShape2D" parent="tighnari" unique_id=273526668 groups=["enemies"]]
+position = Vector2(-133, 101.5)
+shape = SubResource("RectangleShape2D_co2oj")
+
+[node name="Timer" type="Timer" parent="tighnari" unique_id=754690575 groups=["enemies"]]
+
+[node name="Area2D" type="Area2D" parent="tighnari" unique_id=441276859 groups=["enemies", "jjjj"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tighnari/Area2D" unique_id=1527257810 groups=["enemies"]]
+position = Vector2(-133.3125, 67.75)
+shape = SubResource("RectangleShape2D_f7os4")
+debug_color = Color(0.9697797, 0, 0.46224964, 0.41960785)
+
+[node name="cyYes" type="CharacterBody2D" parent="." unique_id=1240011042 groups=["enemies"]]
+position = Vector2(619, 392)
+script = ExtResource("5_0urks")
+
+[node name="Sprite2D Łucja" type="Sprite2D" parent="cyYes" unique_id=147330938 groups=["enemies"]]
+position = Vector2(-112, 114)
+scale = Vector2(2.325, 2.235)
+texture = ExtResource("13_15jce")
+
+[node name="CollisionShape2D łucja" type="CollisionShape2D" parent="cyYes" unique_id=1531227093 groups=["enemies"]]
+position = Vector2(-133, 107)
+shape = SubResource("RectangleShape2D_co2oj")
+
+[node name="Timer" type="Timer" parent="cyYes" unique_id=1331107127 groups=["enemies"]]
+
+[node name="Area2D" type="Area2D" parent="cyYes" unique_id=2034320880 groups=["enemies", "jjjj"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cyYes/Area2D" unique_id=1025856896 groups=["enemies"]]
+position = Vector2(-133, 118)
+shape = SubResource("RectangleShape2D_f7os4")
+debug_color = Color(0.9697797, 0, 0.46224964, 0.41960785)
+
+[node name="chuja" type="CharacterBody2D" parent="." unique_id=2058042574 groups=["enemies"]]
+position = Vector2(-30, 18)
+script = ExtResource("5_0urks")
+
+[node name="Sprite2D Łucja" type="Sprite2D" parent="chuja" unique_id=801715039 groups=["enemies"]]
+position = Vector2(-122.12501, 131.375)
+scale = Vector2(2.1224997, 1.8874999)
+texture = ExtResource("14_muen7")
+
+[node name="CollisionShape2D łucja" type="CollisionShape2D" parent="chuja" unique_id=357280442 groups=["enemies"]]
+position = Vector2(-143, 126)
+shape = SubResource("RectangleShape2D_co2oj")
+
+[node name="Timer" type="Timer" parent="chuja" unique_id=231357006 groups=["enemies"]]
+
+[node name="Area2D" type="Area2D" parent="chuja" unique_id=1357677450 groups=["enemies", "jjjj"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chuja/Area2D" unique_id=2032200280 groups=["enemies"]]
+position = Vector2(-143.75, 118.765625)
+shape = SubResource("RectangleShape2D_f7os4")
+debug_color = Color(0.9697797, 0, 0.46224964, 0.41960785)
+
+[node name="sakusa" type="CharacterBody2D" parent="." unique_id=1995685445 groups=["enemies"]]
+position = Vector2(518, 199)
+script = ExtResource("5_0urks")
+
+[node name="Sprite2D Łucja" type="Sprite2D" parent="sakusa" unique_id=331716037 groups=["enemies"]]
+position = Vector2(-122.12501, 118.875)
+scale = Vector2(2.1224997, 2.1375)
+texture = ExtResource("15_4yot2")
+
+[node name="CollisionShape2D łucja" type="CollisionShape2D" parent="sakusa" unique_id=154679873 groups=["enemies"]]
+position = Vector2(-143, 126)
+shape = SubResource("RectangleShape2D_co2oj")
+
+[node name="Timer" type="Timer" parent="sakusa" unique_id=1261345583 groups=["enemies"]]
+
+[node name="Area2D" type="Area2D" parent="sakusa" unique_id=2142553391 groups=["enemies", "jjjj"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sakusa/Area2D" unique_id=219826523 groups=["enemies"]]
+position = Vector2(-144, 138)
+shape = SubResource("RectangleShape2D_f7os4")
+debug_color = Color(0.9697797, 0, 0.46224964, 0.41960785)
+
+[node name="gorge" type="CharacterBody2D" parent="." unique_id=2033986304 groups=["enemies"]]
+position = Vector2(475, 412)
+script = ExtResource("5_0urks")
+
+[node name="gorge" type="Sprite2D" parent="gorge" unique_id=183198380 groups=["enemies"]]
+position = Vector2(-759.87494, -275.12497)
+scale = Vector2(2.1224997, 2.1375)
+texture = ExtResource("16_15jce")
+
+[node name="CollisionShape2D łucja" type="CollisionShape2D" parent="gorge" unique_id=1707469710 groups=["enemies"]]
+position = Vector2(-784, -275)
+shape = SubResource("RectangleShape2D_co2oj")
+
+[node name="Timer" type="Timer" parent="gorge" unique_id=217442462 groups=["enemies"]]
+
+[node name="Area2D" type="Area2D" parent="gorge" unique_id=1461334428 groups=["enemies", "jjjj"]]
+position = Vector2(-637.75, -394)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="gorge/Area2D" unique_id=1651548667 groups=["enemies"]]
+position = Vector2(-136.25, 95)
+shape = SubResource("RectangleShape2D_f7os4")
+debug_color = Color(0.9697797, 0, 0.46224964, 0.41960785)
+
+[node name="sukuna" type="CharacterBody2D" parent="." unique_id=1115014954 groups=["enemies"]]
+position = Vector2(475, 412)
+script = ExtResource("5_0urks")
+
+[node name="Sprite2D Łucja" type="Sprite2D" parent="sukuna" unique_id=2090583339 groups=["enemies"]]
+position = Vector2(-119.00001, 119)
+scale = Vector2(2.1224997, 2.1375)
+texture = ExtResource("17_muen7")
+
+[node name="CollisionShape2D łucja" type="CollisionShape2D" parent="sukuna" unique_id=1730575369 groups=["enemies"]]
+position = Vector2(-143, 126)
+shape = SubResource("RectangleShape2D_co2oj")
+
+[node name="Timer" type="Timer" parent="sukuna" unique_id=690371092 groups=["enemies"]]
+
+[node name="Area2D" type="Area2D" parent="sukuna" unique_id=1895710109 groups=["enemies", "jjjj"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sukuna/Area2D" unique_id=1929318086 groups=["enemies"]]
+position = Vector2(-144, 138)
+shape = SubResource("RectangleShape2D_f7os4")
+debug_color = Color(0.9697797, 0, 0.46224964, 0.41960785)
+
+[node name="madzia" type="CharacterBody2D" parent="." unique_id=277097218 groups=["enemies"]]
+script = ExtResource("17_ijnit")
+
+[node name="Sprite2D" type="Sprite2D" parent="madzia" unique_id=1874978774 groups=["enemies"]]
+position = Vector2(90.5, 63.625)
+scale = Vector2(2.31, 3.2525)
+texture = ExtResource("12_lwa3h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="madzia" unique_id=63409229 groups=["enemies"]]
+position = Vector2(69, 70)
+shape = SubResource("RectangleShape2D_ltfql")
+
+[node name="Area2D" type="Area2D" parent="madzia" unique_id=1566766041 groups=["enemies", "jjjj"]]
+position = Vector2(70, 104)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="madzia/Area2D" unique_id=181654623 groups=["enemies"]]
+position = Vector2(0, 7.1210938)
+shape = SubResource("RectangleShape2D_nhfh1")
+debug_color = Color(0.95859534, 6.738305e-07, 0.5289286, 0.41960785)
+
+[node name="Timer" type="Timer" parent="madzia" unique_id=685280137 groups=["enemies"]]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=113183254]
+process_mode = 3
+script = ExtResource("19_00odv")
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=2009208350]
+offset_left = 47.0
+offset_top = 44.0
+offset_right = 1101.0
+offset_bottom = 603.0
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=1421081231]
+offset_left = 658.0
+offset_top = 476.0
+offset_right = 943.0
+offset_bottom = 533.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Button" unique_id=242243178]
+position = Vector2(213.99998, 58.999985)
+scale = Vector2(6.1899996, 3.6650002)
+texture = ExtResource("19_ijnit")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=757646964]
+offset_left = 54.0
+offset_top = 131.0
+offset_right = 609.0
+offset_bottom = 702.0
+texture = ExtResource("20_dqqx3")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer" unique_id=1026973717]
+offset_left = 260.0
+offset_top = -76.0
+offset_right = 776.0
+offset_bottom = 335.0
+rotation = 0.15769479
+texture = ExtResource("21_00odv")
+
+[connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer" method="_on_button_pressed"]

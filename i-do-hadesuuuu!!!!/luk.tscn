@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dcdwbi166ikuu"]
+
+[ext_resource type="Script" uid="uid://o85s4r1gjuh3" path="res://luk.gd" id="1_b4jvc"]
+[ext_resource type="Texture2D" uid="uid://cc8jvbeprm8nb" path="res://pixilart-drawing 20.png" id="1_efbxg"]
+
+[node name="luk" type="Node2D" unique_id=490334922]
+position = Vector2(7, -1)
+script = ExtResource("1_b4jvc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=700067697]
+position = Vector2(-20, 5)
+texture = ExtResource("1_efbxg")

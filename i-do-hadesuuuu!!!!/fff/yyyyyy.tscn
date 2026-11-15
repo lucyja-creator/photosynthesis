@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bjmoh0v3yfsl3"]
+
+[node name="Control" type="CanvasLayer" unique_id=750286331]
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=152099123]
+offset_right = 1155.0
+offset_bottom = 661.0

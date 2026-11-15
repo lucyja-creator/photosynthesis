@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bmhpownq4hp72"]
+
+[ext_resource type="Script" uid="uid://x2g1r7lka2m0" path="res://fff/start.gd" id="1_klfam"]
+[ext_resource type="Texture2D" uid="uid://cjjsb180xu01u" path="res://pixil-frame-0 5.png" id="2_plkul"]
+
+[node name="Node2D" type="Control" unique_id=1646304592]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_klfam")
+
+[node name="Label" type="Label" parent="." unique_id=1984373367]
+layout_mode = 0
+offset_left = 481.0
+offset_top = 316.0
+offset_right = 661.0
+offset_bottom = 340.0
+text = " ! use Arrows to Move !"
+
+[node name="j" type="Label" parent="." unique_id=2112804917]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 357.0
+offset_right = 635.0
+offset_bottom = 380.0
+text = "! Left-click to Shoot !"
+
+[node name="Panel" type="Panel" parent="." unique_id=1484079222]
+layout_mode = 0
+offset_left = 453.0
+offset_top = 213.0
+offset_right = 684.0
+offset_bottom = 430.0
+
+[node name="Button" type="Button" parent="." unique_id=1550242163]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 266.0
+offset_right = 626.0
+offset_bottom = 297.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Button" unique_id=1919213281]
+position = Vector2(111, 38)
+scale = Vector2(3.06, 2.2649999)
+texture = ExtResource("2_plkul")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
